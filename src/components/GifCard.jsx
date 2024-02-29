@@ -1,4 +1,5 @@
 import { useState } from "react"
+import PropTypes from 'prop-types'
 
 export const GifCard = ({ url, title }) => {
 
@@ -15,3 +16,10 @@ export const GifCard = ({ url, title }) => {
         </div>
     )
 }
+
+GifCard.propTypes = {
+    url: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired
+}
+
+
